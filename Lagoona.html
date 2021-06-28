@@ -32,7 +32,7 @@
       <nav class="header-navigation">
         <ul class="header-list">
           <li class="header-list-item">
-            <a class="header-list-link" href="">
+            <a class="header-list-link" href="/">
               О нас
             </a>
           </li>
@@ -78,10 +78,10 @@
           Быстрая бронь
           </h2>      
             <!-- <div class="booking-cell"> -->
-            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form">
-                  <input type="text" name="city" placeholder="Город" class="booking-item">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+                  <input required type="text" name="city" placeholder="Город" class="booking-item">
                   <input type="text" name="number" placeholder="Категория номера" class="booking-item">
-                  <input type="date" name="date" placeholder="Дата заселения" label="2020.10.01" min="2020-10-01" class="booking-item">
+                  <input required type="date" name="date" min="2020-10-01" class="booking-item">
                   <input type="number" name="nights" placeholder="Количество ночей" class="booking-item">
                   <input type="number" name="guests" placeholder="Количество гостей" class="booking-item">  
             <!-- </div> -->
@@ -513,6 +513,7 @@
            </div>         
           </div>
         </div>
+      </div>
     </section>  
 
     <section class="last-section container">
@@ -521,15 +522,15 @@
           Контакты
         </h2>
         <div class="contacts-container">
-          <span class="contacts-line">
+          <div class="contacts-line">
               <h4 class="contacts-small-title contacts-small-title-adress">
                 Адрес
               </h4>
               <p class="contacts-adress">
                 Москва, улица Юности, дом 5 строение 4, офис 2
               </p>
-          </span>
-          <span class="contacts-line">
+          </div>
+          <div class="contacts-line">
               <h4 class="contacts-small-title contacts-small-title-phone">
                 Телефоны
               </h4>
@@ -537,8 +538,8 @@
                 <a class="contacts-and-footer-item-link" href="tel:+74995356434">+7 (499) 535-64-34</a> <br>
                 <a class="contacts-and-footer-item-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
               </p>
-          </span>
-          <span class="contacts-line">
+          </div>
+          <div class="contacts-line">
               <h4 class="contacts-small-title contacts-small-title-mail">
                 E-mail
               </h4>
@@ -548,19 +549,19 @@
                 <a class="contacts-and-footer-item-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
                 по вопросам сотрудничества
               </p>
-          </span>
-          <span class="contacts-line">
+          </div>
+          <div class="contacts-line">
               <h4 class="contacts-small-title contacts-small-title-time">
                 График
               </h4>
               <p class="contacts-time">
                 Понедельник - пятница, <br>с 10:0 до 19:00
               </p>
-          </span>
+          </div>
             <button class="btn contacts-btn">
               Построить маршрут
             </button>
-          </div>
+        </div>
       </section>
 
       <section class="write-us">
@@ -568,10 +569,10 @@
           <h2 class="section-title write-us-title">
             Напишите нам
           </h2>
-            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form">
-              <input type="text" name="name" placeholder="Имя" autocomplete class="write-us-input">
-              <input type="tel" name="phone" placeholder="+7" autocomplete class="write-us-input">
-              <textarea type="text" name="message" placeholder="Сообщение..." class="write-us-input write-us-input-last"></textarea>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+              <input required type="text" name="name" placeholder="Имя" class="write-us-input">
+              <input required type="tel" name="phone" placeholder="+7" class="write-us-input">
+              <textarea required name="message" placeholder="Сообщение..." class="write-us-input write-us-input-last"></textarea>
               <button type="submit" class="btn write-us-btn">Отправить</button>
             </form>
         </div>
